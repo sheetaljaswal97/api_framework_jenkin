@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="22.75921">
+<testcase classname="Validating Add place API's" name="Verify if place is being successfully added using AddPlace Api or not" time="14.587932">
+<system-out><![CDATA[Given Add place payload with "Sheetal" "Himachal Pradesh" "Hindi"...........passed
+When user calls "AddPlaceAPI" with "POST" http request......................passed
+Then the API call is success with status code 200...........................passed
+And "status" in the response is "OK"........................................passed
+And "scope" in the response is "APP"........................................passed
+And verify Place_Id created maps to "Sheetal" using "GetPlaceAPI"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validating Add place API's" name="Verify if place is being successfully added using AddPlace Api or not 2" time="3.674514">
+<system-out><![CDATA[Given Add place payload with "Mohit" "Punjab" "Punjabi".....................passed
+When user calls "AddPlaceAPI" with "POST" http request......................passed
+Then the API call is success with status code 200...........................passed
+And "status" in the response is "OK"........................................passed
+And "scope" in the response is "APP"........................................passed
+And verify Place_Id created maps to "Mohit" using "GetPlaceAPI".............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validating Add place API's" name="Verify if Delete functionallity is working" time="4.496764">
+<system-out><![CDATA[Given Delete place payload..................................................passed
+When user calls "DeletePlaceAPI" with "POST" http request...................passed
+Then the API call is success with status code 200...........................passed
+And "status" in the response is "OK"........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+
